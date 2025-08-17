@@ -94,7 +94,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         $roles = $this->roles;
         // guarantee every user at least has client role
-        $roles[] = 'client';
+        $roles[] = 'ROLE_CLIENT';
 
         return array_unique($roles);
     }
