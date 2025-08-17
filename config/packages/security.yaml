@@ -35,6 +35,7 @@ security:
          - { path: ^/api/account/me, roles: PUBLIC_ACCESS }
          - { path: ^/api/doc, roles: PUBLIC_ACCESS }
          - { path: ^/api/picture, roles: PUBLIC_ACCESS }
+         - { path: ^/api/food, roles: PUBLIC_ACCESS }
          - { path: ^/api/food/new, roles: ROLE_ADMIN }
          - { path: ^/api, roles : ROLE_CLIENT }
 
