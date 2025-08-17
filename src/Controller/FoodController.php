@@ -28,7 +28,7 @@ final class FoodController extends AbstractController
         private SerializerInterface $serializer,
         private UrlGeneratorInterface $urlGenerator
     ) {}
-    #[Route(name: 'new', methods: ['POST'])]
+    #[Route('/new',name: 'new', methods: ['POST'])]
     public function new(Request $request): JsonResponse
     {
         $food = $this->serializer->deserialize($request->getContent(), Food::class, 'json');

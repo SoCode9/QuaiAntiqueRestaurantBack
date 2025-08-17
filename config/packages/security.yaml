@@ -34,6 +34,8 @@ security:
          - { path: ^/api/login, roles: PUBLIC_ACCESS }
          - { path: ^/api/account/me, roles: PUBLIC_ACCESS }
          - { path: ^/api/doc, roles: PUBLIC_ACCESS }
+         - { path: ^/api/picture, roles: PUBLIC_ACCESS }
+         - { path: ^/api/food/new, roles: ROLE_ADMIN }
          - { path: ^/api, roles : ROLE_CLIENT }
 
 when@test:
